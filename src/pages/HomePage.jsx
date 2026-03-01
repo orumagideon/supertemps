@@ -131,10 +131,10 @@ function HomePage() {
       <AnimatedSection className="section-shell pt-0">
         <h2 className="section-title">Our Impact by the Numbers</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <AnimatedCounter end={300} label="Employers" suffix="+" />
-          <AnimatedCounter end={47} label="Counties Covered" suffix="" />
-          <AnimatedCounter end={7} label="Years Experience" suffix="+" />
-          <AnimatedCounter end={1000} label="Youth Empowered" suffix="+" />
+          <AnimatedCounter end={300} label="Employers" suffix="+" className="bg-blue-50 border-blue-100" />
+          <AnimatedCounter end={47} label="Counties Covered" suffix="" className="bg-emerald-50 border-emerald-100" />
+          <AnimatedCounter end={7} label="Years Experience" suffix="+" className="bg-violet-50 border-violet-100" />
+          <AnimatedCounter end={1000} label="Youth Empowered" suffix="+" className="bg-amber-50 border-amber-100" />
         </div>
       </AnimatedSection>
     </>
