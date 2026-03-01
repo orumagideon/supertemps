@@ -7,11 +7,41 @@ import AnimatedSection from '../components/AnimatedSection'
 import AnimatedCounter from '../components/AnimatedCounter'
 
 const serviceCards = [
-  { icon: GraduationCap, title: 'Training Services', text: 'Practical, industry-aligned programs for workforce readiness and leadership growth.' },
-  { icon: UserRoundCog, title: 'Consultancy Services', text: 'Strategic advisory in career growth, compliance, and workforce transition.' },
-  { icon: BriefcaseBusiness, title: 'Industrial Placement Services', text: 'Connecting talent to formal and informal sector opportunities across Kenya.' },
-  { icon: Handshake, title: 'Apprenticeship/Job experience & Learnership Programs', text: 'Structured pathways from learning to employability and career progression.' },
-  { icon: Package, title: 'Commercial Services', text: 'Reliable sourcing and delivery for construction, office, and industrial needs.' },
+  {
+    icon: GraduationCap,
+    title: 'Training Services',
+    text: 'Practical, industry-aligned programs for workforce readiness and leadership growth.',
+    cardClass: 'bg-blue-50 border-blue-100',
+    iconClass: 'bg-blue-100 text-blue-700',
+  },
+  {
+    icon: UserRoundCog,
+    title: 'Consultancy Services',
+    text: 'Strategic advisory in career growth, compliance, and workforce transition.',
+    cardClass: 'bg-emerald-50 border-emerald-100',
+    iconClass: 'bg-emerald-100 text-emerald-700',
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: 'Industrial Placement Services',
+    text: 'Connecting talent to formal and informal sector opportunities across Kenya.',
+    cardClass: 'bg-violet-50 border-violet-100',
+    iconClass: 'bg-violet-100 text-violet-700',
+  },
+  {
+    icon: Handshake,
+    title: 'Apprenticeship/On-the-Job Experience & Learnership Programs',
+    text: 'Structured pathways from learning to employability and career progression.',
+    cardClass: 'bg-amber-50 border-amber-100',
+    iconClass: 'bg-amber-100 text-amber-700',
+  },
+  {
+    icon: Package,
+    title: 'Commercial Services',
+    text: 'Reliable sourcing and delivery for construction, office, and industrial needs.',
+    cardClass: 'bg-cyan-50 border-cyan-100',
+    iconClass: 'bg-cyan-100 text-cyan-700',
+  },
 ]
 
 function HomePage() {
@@ -36,8 +66,8 @@ function HomePage() {
               className="max-w-3xl"
             >
               <h1 className="whitespace-nowrap text-[clamp(1.5rem,5vw,3.75rem)] font-bold leading-tight text-white">Supertemps International Ltd</h1>
-              <p className="mt-3 inline-block rounded-full border border-[#e2c67f]/60 bg-[#e2c67f]/10 px-4 py-1 text-sm font-semibold tracking-wide text-[#f9df9f]">
-                U Imagine We Deliver
+              <p className="mt-3 block w-fit rounded-full border border-[#e2c67f]/60 bg-[#e2c67f]/10 px-4 py-1 text-center text-sm font-semibold tracking-wide text-[#f9df9f] md:mx-auto">
+                "U Imagine We Deliver"
               </p>
               <p className="mt-5 text-lg text-slate-200 md:text-2xl">
                 Empowering Youth. Delivering Excellence. Driving Global Impact.
@@ -56,7 +86,7 @@ function HomePage() {
       <AnimatedSection className="section-shell">
         <h2 className="section-title">About Supertemps</h2>
         <p className="section-subtitle">
-          Supertemps International Ltd is a leading company in Commercial Services, Training, Consultancy, Apprenticeship, and Workforce Development. Founded in 2018, we bridge the gap between academic learning and industry requirements.
+          Supertemps International Ltd is accredited company in Consultancy services, Training Services and Commercial services. Founded in 2018 as a sole proprietorship, the company set out to bridge gaps in skills development and workforce readiness. With over seven years of continuous experience, the company has successfully designed and implemented youth employability and workforce development programmes, including Corporate Trainings, youth job placement, apprenticeship, indentured learnership, and industrial attachment programmes at both local and international levels. These initiatives are implemented through collaboration with accredited agents and strategic partners, ensuring quality compliance with applicable labour laws and migration standards. Through sustained growth, a commitment to excellence, and client-focused innovation, the company has evolved into a fully incorporated entity with an expanding cross-border footprint.
         </p>
         <div className="mt-10 grid items-center gap-8 md:grid-cols-2">
           <img src="/pictures/about1.jpg" alt="Training session with youth in classroom environment" loading="lazy" className="h-full min-h-[320px] w-full rounded-2xl object-cover shadow-md" />
@@ -78,9 +108,9 @@ function HomePage() {
         <h2 className="section-title">Core Services</h2>
         <p className="section-subtitle">Built for workforce excellence, business resilience, and youth empowerment.</p>
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {serviceCards.map(({ icon, title, text }) => (
-            <div key={title} className="card-base transition hover:-translate-y-1 hover:shadow-md">
-              <div className="mb-4 w-fit rounded-2xl bg-[#0f1e45]/10 p-3 text-[#0f1e45]">{createElement(icon, { size: 24 })}</div>
+          {serviceCards.map(({ icon, title, text, cardClass, iconClass }) => (
+            <div key={title} className={`rounded-2xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md ${cardClass}`}>
+              <div className={`mb-4 w-fit rounded-2xl p-3 ${iconClass}`}>{createElement(icon, { size: 24 })}</div>
               <h3 className="text-xl font-semibold text-[#0f1e45]">{title}</h3>
               <p className="mt-2 text-slate-600">{text}</p>
             </div>

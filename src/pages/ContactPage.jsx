@@ -48,7 +48,7 @@ function ContactPage() {
   return (
     <>
       <SeoTitle title="Contact Us" description="Contact Supertemps International Ltd in Nairobi via phone, email, or the online contact form." />
-      <PageHero title="Contact Us" subtitle="Let’s work together to empower youth, strengthen businesses, and deliver impactful solutions." image="/pictures/contact1.jpg" />
+      <PageHero title="Contact Us" subtitle="Let’s work together to empower youth, strengthen businesses, and deliver impactful solutions in organizations." image="/pictures/contact1.jpg" />
 
       <AnimatedSection className="section-shell">
         <div className="grid gap-8 lg:grid-cols-2">

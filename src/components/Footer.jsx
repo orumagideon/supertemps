@@ -7,7 +7,7 @@ function Footer() {
       <div className="section-shell grid gap-10 py-14 md:grid-cols-3">
         <div>
           <h3 className="text-xl font-bold">Supertemps International Ltd</h3>
-          <p className="mt-3 max-w-sm text-sm text-slate-300">U Imagine We Deliver</p>
+          <p className="mt-3 max-w-sm text-sm text-slate-300">"U Imagine We Deliver"</p>
           <div className="mt-5 flex gap-3 text-slate-200">
             <span className="rounded-full border border-white/20 p-2"><Facebook size={16} /></span>
             <span className="rounded-full border border-white/20 p-2"><Twitter size={16} /></span>

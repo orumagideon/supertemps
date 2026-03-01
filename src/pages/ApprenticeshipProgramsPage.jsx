@@ -3,6 +3,7 @@ import AnimatedSection from '../components/AnimatedSection'
 import SeoTitle from '../components/SeoTitle'
 
 const pathways = [
+  'NYOTA program',
   'Graduate Apprenticeship',
   'Informal Apprenticeship',
   'Industrial Attachment',
@@ -16,7 +17,7 @@ function ApprenticeshipProgramsPage() {
     <>
       <SeoTitle title="Apprenticeship Programs" description="Structured apprenticeship and learnership pathways by Supertemps International Ltd." />
       <PageHero
-        title="Apprenticeship/Job experience & Learnership Programs"
+        title="Apprenticeship/On-the-Job Experience & Learnership Programs"
         subtitle="Work-integrated pathways that transform learners into industry-ready professionals."
         image="/pictures/about1.jpg"
       />

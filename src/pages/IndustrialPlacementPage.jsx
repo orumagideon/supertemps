@@ -22,7 +22,7 @@ function IndustrialPlacementPage() {
   return (
     <>
       <SeoTitle title="Industrial Placement" description="Supertemps connects job seekers with formal and informal sector opportunities across key industries." />
-      <PageHero title="Industrial Placement" subtitle="Connecting skilled, semi-skilled, and unskilled labor to high-impact sectors." image="/pictures/placement1.jpg" />
+      <PageHero title="Industrial Placement" subtitle="Connecting skilled, semi-skilled, and unskilled labor to high-impact sectors, both locally and abroad." image="/pictures/placement1.jpg" />
 
       <AnimatedSection className="section-shell">
         <div className="grid gap-8 md:grid-cols-2">

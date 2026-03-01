@@ -3,7 +3,7 @@ import AnimatedSection from '../components/AnimatedSection'
 import SeoTitle from '../components/SeoTitle'
 
 const focusAreas = [
-  'Career Growth & Guidance',
+  'National Youth Opportunities Towards Advancement project (NYOTA)',
   'Financial Risk Management',
   'Regulatory Compliance',
   'Workforce Transition Programs',
