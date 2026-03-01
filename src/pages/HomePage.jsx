@@ -102,6 +102,16 @@ function HomePage() {
         </div>
       </AnimatedSection>
 
+      <AnimatedSection className="section-shell pt-0">
+        <h2 className="section-title">Key Highlight</h2>
+        <div className="mt-6 rounded-2xl border border-[#c8a44f]/30 bg-[#0f1e45] p-8 shadow-sm">
+          <h3 className="text-2xl font-semibold text-white">The NYOTA Project</h3>
+          <p className="mt-3 text-slate-200">
+            We are proud to implement the National Youth Opportunities Towards Advancement (NYOTA) Project in collaboration with the World Bank and the Government of Kenya.
+          </p>
+        </div>
+      </AnimatedSection>
+
       <div className="soft-divider" />
 
       <AnimatedSection className="section-shell">
